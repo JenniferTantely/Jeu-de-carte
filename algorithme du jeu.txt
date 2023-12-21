@@ -1,0 +1,27 @@
+COMMENT LE JEU DE CARTE SE JOUE /ALGORITHME
+
+-le menu contenant un message d'acceuil 
+
+-la demande de choix qui demande à l'utilisateur s' il veut jouer (oui/non)
+
+  -> si le joueur tape oui
+ 	1/ 3 cartes s'affichent {feu, eau, plante} //affichage
+		*le feu bat la plante - l'eau bat le feu - la plante bat l'eau
+	2/ on demande à l'utilisateur de choisir une de ces cartes //return choixUtilisateur
+	3/ le robot(ou machine) va ensuite choisir sa carte aléatoirement //return choixRobot
+	4/ on compare les deux cartes //param (choixUtilisateur, choixRobot) 
+		4.1/ si les deux cartes sont égaux, 0 point pour le joueur
+		4.2/ si le robot gagne, 1 point pour le robot
+		4.3/ si le joueur gagne, 1 point pour le joueur
+
+	5/ à chaque manche (3 manches au total) les instructions 1/-2/-3/-4/ s'éxecutent
+	6/ à la fin du jeu (après 3 manches), on regarde les points
+		6.1/ si les points du joueur sont > aux points du robot, on affiche un message de succès et de merci d'avoir joué
+		6.2/ si les points du joueur sont < aux points du robot, on affiche un message d'échec et de merci d'avoir joué
+		6.3/ si le point du joueur est = au point du robot
+			6.3.1/ on demande au joueur s'il veut recommencer la partie
+				~ si oui, revenir au case départ du jeu
+				~ si non, arrêter le jeu
+  
+  -> si le joueur tape non
+	1/ quitter
