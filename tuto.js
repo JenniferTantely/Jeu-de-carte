@@ -14,3 +14,4 @@ function tuto(){
     console.log("");
     console.log(" N.B : Ceci n'est pas un jeu multijoueur, donc soyez sûr que je vais vous massacrer qui que vous soyez ;-) ")
 }
+tuto()
