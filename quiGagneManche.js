@@ -16,4 +16,5 @@ function premierParamGagne(joueur, robot){
         return false
     }
 }
-console.log(premierParamGagne("p", "e"))
+//console.log(premierParamGagne("p", "e"))
+exports.premierParamGagne = premierParamGagne
