@@ -5,18 +5,18 @@ const finalvainceur = require('./quiGagneJeu');
  * @param {string} choixUtilisateur 
  * @param {string} choixRobot 
  */
-function comparaisonDesChoix(choixUtilisateur, choixRobot){
-    let pointUtilisateur = 0;
-    let pointRobot = 0;
-    //manao boucle
+function pointPourUtilisateur(choixUtilisateur, choixRobot, pointUtilisateur){
     if(premierParamGagne.premierParamGagne(choixUtilisateur, choixRobot)){
         pointUtilisateur ++
     }
-    else if(premierParamGagne.premierParamGagne(choixUtilisateur, choixRobot)==false){
+    return pointUtilisateur;
+}
+
+function pointPourRobot(choixUtilisateur, choixRobot, pointRobot){
+    if(premierParamGagne.premierParamGagne(choixRobot, choixUtilisateur)){
         pointRobot ++
     }
-    s
-
+    return pointRobot;
 }
-console.log(comparaisonDesChoix("p", "e"))
-exports.comparaisonDesChoix = comparaisonDesChoix;
+exports.pointPourRobot = pointPourRobot;
+exports.pointPourUtilisateur = pointPourUtilisateur;

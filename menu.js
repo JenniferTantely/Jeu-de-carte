@@ -1,4 +1,4 @@
-const prompt = require("prompt-sync")();
+
 /**
  * @function menu
  * Cette fonction affiche le menu du jeu
@@ -20,11 +20,12 @@ function menu() {
     console.log("                                               |      la bienvenue     | ");
     console.log("                                               |                       | ");
     console.log("                                               |      1- JOUER         | ");
-    console.log("                                               |           ou          | ");
+    console.log("                                               |                       | ");
     console.log("                                               |      2- TUTORIEL      | ");
-    console.log("                                               |           ou          | ");
+    console.log("                                               |                       | ");
     console.log("                                               |      3- QUITTER       | ");
     console.log("                                               |.......................| ");
     console.log("                                               |_______________________| ");
 }
-menu()
+//menu();
+exports.menu = menu;

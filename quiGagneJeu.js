@@ -1,5 +1,8 @@
-
+const succesMessage = require('./messageAuResultat');
+const echecMessage = require('./messageAuResultat');
 const voulezVousJouer = require('./affichageCartes');
+const vousAvezGagne = require('./decoration');
+const vousAvezPerdue = require('./decoration');
 /**
  * @function finalvainceur
  * @param {number} pointUtilisateur 
@@ -7,13 +10,13 @@ const voulezVousJouer = require('./affichageCartes');
  */
 function finalvainceur(pointUtilisateur, pointRobot){
     if(pointUtilisateur>pointRobot){
-        //fonction message succes
+        console.log(succesMessage.succesMessage());
+        vousAvezGagne.vousAvezGagne();
     }
     else if(pointUtilisateur<pointRobot){
-        //fonction message echec
+        console.log(echecMessage.echecMessage());
+        vousAvezGagne.vousAvezPerdue();
     }
-    else if(pointUtilisateur==pointRobot){
-        voulezVousJouer();
-    }
-};
+}
+//finalvainceur(2,1)
 exports.finalvainceur = finalvainceur;

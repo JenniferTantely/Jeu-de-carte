@@ -1,14 +1,4 @@
-function vosCartes(){
-    console.log("                               ")
-    console.log("    LES TROIS ELEMENTS         ")
-    console.log("         /   |   \\            ")
-    console.log("      Feu   Eau   Plante       ")
-    console.log("    O/       O       \\O       ")
-    console.log("   (|/      (|)      \\|)      ")
-    console.log("   /        / \\       \\      ")
-    console.log("                               ")
-};
-vosCartes();
+
 function vousAvezGagne(){
     console.log("                               ")
     console.log("  VOUS AVEZ GAGNE LE RESPECT   ")
@@ -19,7 +9,8 @@ function vousAvezGagne(){
     console.log("        |    |    |            ")
     console.log("       / \\  / \\  / \\        ")
 };
-vousAvezGagne()
+//vousAvezGagne()
+exports.vousAvezGagne = vousAvezGagne;
 function vousAvezPerdue(){
     console.log("                               ")
     console.log("       LES TROIS ELEMENTS      ")
@@ -30,4 +21,5 @@ function vousAvezPerdue(){
     console.log("      [|]   [|]   [|]          ")
     console.log("      / \\   / \\   / \\       ")
 };
-vousAvezPerdue()
+//vousAvezPerdue()
+exports.vousAvezPerdue = vousAvezPerdue;
