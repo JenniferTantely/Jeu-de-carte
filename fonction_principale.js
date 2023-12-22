@@ -20,7 +20,7 @@ function jeuDeCarte() {
             afficherLesCartes.afficherLesCartes();
             let carteUtilisateur = choixUtilisateur.choixUtilisateur();
             let carteRobot = choixRobot.choixRobot();
-            console.log(carteRobot)
+            console.log(`Carte du robot : ${carteRobot}`)
             pointRobot = pointPourRobot.pointPourRobot(carteUtilisateur, carteRobot, pointRobot);
             pointUtilisateur = pointPourUtilisateur.pointPourUtilisateur(carteUtilisateur, carteRobot, pointUtilisateur);
             console.log(`Vous : ${pointUtilisateur} Machine : ${pointRobot}`)
@@ -29,11 +29,11 @@ function jeuDeCarte() {
         finalvainceur.finalvainceur(pointUtilisateur, pointRobot);
         if (pointUtilisateur == pointRobot) {
             let recommencer = prompt('Voulez-vous recommencer  ?(Oui/Non) ')
-            if (recommencer = "Non") {
+            if (recommencer == "Non") {
                 console.log("Merci d'avoir joué :)");
             }
-            else if (recommencer = "Oui") {
-                jeuDeCarte();
+            else if (recommencer == "Oui") {
+                return jeuDeCarte();
             }
         }
 
